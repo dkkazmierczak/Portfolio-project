@@ -1,3 +1,52 @@
+:root {
+  --primary-font-family: "Nunito", sans-serif;
+  --primary-bg-color: linear-gradient(
+    150deg,
+    rgb(0, 0, 0) 60%,
+    rgb(102, 46, 237) 100%
+  );
+  --primary-color: #423b67;
+  --secondary-color: white;
+  --picture-width: 400px;
+  --border-radius: 20px;
+}
+
+body {
+  font-family: var(--primary-font-family);
+  background: var(--primary-bg-color);
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--secondary-color);
+  font-weight: 400;
+  font-size: 40px;
+  padding-top: 110px;
+}
+
 h1 {
-  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 18px;
+  padding-bottom: 40px;
+}
+
+.hero {
+  padding: 170px 200px;
+}
+
+.hero a {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+.hero img {
+  width: var(--picture-width);
+  border-radius: var(--border-radius);
+  display: block;
+  margin: 0 auto;
 }
