@@ -9,7 +9,7 @@
   --secondary-color: white;
   --third-color: rgb(102, 46, 237);
   --picture-width: 400px;
-  --border: 0px 5px 10px rgb(102, 46, 237, 0.5);
+  --border: 0px 0px 20px rgb(102, 46, 237, 1);
   --border-radius: 20px;
 }
 
@@ -41,15 +41,16 @@ h3 {
   padding: 170px 0;
 }
 
-a {
+.hero a {
   color: var(--secondary-color);
   text-decoration: none;
-  padding: 20px 10px;
-  width: 175px;
+  padding: 30px 20px;
+  width: 200px;
+  border-radius: var(--border-radius);
   transition: all 200ms ease-in-out;
 }
 
-a:hover {
+.hero a:hover {
   color: var(--third-color);
   box-shadow: var(--border);
   transition: all 200ms ease-in-out;
@@ -60,6 +61,13 @@ a:hover {
   border-radius: var(--border-radius);
   display: block;
   margin: 0 auto;
+}
+
+img:hover {
+  color: var(--third-color);
+  box-shadow: var(--border);
+  transition: all 200ms ease-in-out;
+  width: 395px;
 }
 
 @media (max-width: 768px) {
