@@ -18,6 +18,32 @@ body {
   color: var(--primary-color);
 }
 
+.navbar {
+  padding: 20px 0;
+  background-color: rgba(0, 0, 0, 0.4) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.nav-home {
+  font-size: 24px;
+}
+
+nav li {
+  padding-left: 30px;
+}
+
+nav a {
+  color: var(--primary-color) !important;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+nav a:hover {
+  color: var(--third-color) !important;
+  transition: all 150ms ease-in-out !important;
+}
+
 h2 {
   color: var(--secondary-color);
   font-weight: 400;
@@ -37,21 +63,19 @@ h3 {
 }
 
 .hero {
-  padding: 170px 0;
+  padding: 240px 0;
 }
 
 .hero a {
-  color: var(--secondary-color);
+  color: var(--primary-color);
+  font-size: 18px;
+  font-weight: 700;
   text-decoration: none;
-  padding: 30px 20px;
   width: 200px;
-  border-radius: var(--border-radius);
-  transition: all 200ms ease-in-out;
 }
 
 .hero a:hover {
-  color: var(--third-color);
-  box-shadow: var(--border);
+  color: rgba(255, 255, 255);
   transition: all 200ms ease-in-out;
 }
 
@@ -59,13 +83,13 @@ h3 {
   width: 400px;
   border-radius: var(--border-radius);
   display: block;
-  margin: 0 auto;
   box-shadow: var(--border);
+  float: right;
 }
 
 .container-projects {
   background: white;
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   max-width: 100%;
   padding: 0 60px;
 }
@@ -79,12 +103,12 @@ h3 {
   color: black;
   text-align: center;
   font-size: 48px;
-  margin:0;
+  margin: 0;
   padding-bottom: 110px;
 }
 
 .projects h2 {
-  font-family: Poppins,sans-serif;
+  font-family: Poppins, sans-serif;
   color: black;
   font-size: 60px;
 }
@@ -119,18 +143,18 @@ h3 {
   margin: 0 auto;
 }
 
-@media(max-width:1900px) {
-   .container-projects {
+@media (max-width: 1900px) {
+  .container-projects {
     padding: 20px;
   }
 
   .projects {
-    padding: 0 ;
+    padding: 0;
   }
 
   .title-projects {
     font-size: 36px;
-    padding-bottom:50px;
+    padding-bottom: 50px;
   }
 
   .projects h2 {
@@ -158,16 +182,25 @@ h3 {
   }
 }
 
-@media(max-width: 992px) {
+@media (max-width: 992px) {
   .projects h2 {
     padding-top: 20px;
   }
+  
   .projects img {
-    max-width:60%;
-}
+    max-width: 60%;
+  }
 }
 
-@media(max-width: 768px) {
+@media (max-width: 768px) {
+  .nav-home {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 12px;
+  }
+
   h2 {
     padding-top: 50px;
     font-size: 18px;
@@ -178,17 +211,20 @@ h3 {
   }
 
   h3 {
-    font-size: 10px;
+    font-size: 12px;
     margin: 0;
   }
 
   .hero {
-    padding: 40px 0;
+    padding: 100px 0;
     text-align: center;
   }
+
   .hero img {
     width: 200px;
     margin-bottom: 30px;
+    float: none;
+    margin: 0 auto;
   }
 
   .hero .big {
@@ -196,15 +232,12 @@ h3 {
   }
 
   .hero .small {
-    color: var(--secondary-color);
-    text-decoration: none;
-    width: 175px;
+    font-size: 12px;
     transition: all 200ms ease-in-out;
     padding: 15px 10px;
     display: block;
     margin: 0 auto;
   }
-
 }
 
 @media (min-width: 769px) {

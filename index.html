@@ -16,37 +16,37 @@
     rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
-    </script>
   <script src="https://kit.fontawesome.com/5397d98a18.js" crossorigin="anonymous">
   </script>
-
 </head>
-<div class="container">
-  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-    <a class="navbar-brand" href="/index.html">Dominika</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-</div>
 
 <body>
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand nav-home" href="/index.html">Dominika Kaźmierczak</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="/index.html#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#recipies">Recipies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="hero">
       <div class="row">
@@ -93,7 +93,7 @@
   </div>
 
   <div class="container container-projects">
-    <h2 class="title-projects">
+    <h2 class="title-projects" id="projects">
       My projects
     </h2>
     <div class="row projects">
@@ -109,8 +109,8 @@
           ahead and type your city!
           <br />
           <span class="d-md-block d-none">
-          You can check the weather at your loction by pressing the location button.
-          <br />
+            You can check the weather at your loction by pressing the location button.
+            <br />
           </span>
           If you are polish, just click the button "PL" to go to the website in polish version.
           <br />
@@ -119,7 +119,7 @@
         <p class="projects-credit">
           Design & Development - Dominika Kaźmierczak
         </p>
-        <a href="https://peaceful-bell-2f5896.netlify.app/" class="projects-link">See the website</a>
+        <a href="https://peaceful-bell-2f5896.netlify.app/" class="projects-link" target="_blank">See the website</a>
       </div>
 
       <div class="col-lg-6 d-lg-block d-none">
@@ -128,6 +128,10 @@
     </div>
 
   </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
