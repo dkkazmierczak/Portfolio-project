@@ -2,7 +2,7 @@
   --primary-font-family: "Nunito", sans-serif;
   --primary-bg-color: linear-gradient(
     150deg,
-    rgb(0, 0, 0) 60%,
+    rgb(0, 0, 0) 30%,
     rgb(102, 46, 237) 100%
   );
   --primary-color: #423b67;
@@ -67,16 +67,16 @@ h3 {
 }
 
 .hero a {
-  color: var(--primary-color);
-  font-size: 18px;
-  font-weight: 700;
+  color: var(--secondary-color);
+  font-size: 16px;
+  font-weight: 500;
   text-decoration: none;
   width: 200px;
+  transition: all 150ms ease-in-out;
 }
 
 .hero a:hover {
-  color: rgba(255, 255, 255);
-  transition: all 200ms ease-in-out;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .hero img {
@@ -95,7 +95,7 @@ h3 {
 }
 
 .projects {
-  padding: 0 120px 120px 120px;
+  padding: 0 120px 50px 120px;
 }
 
 .title-projects {
@@ -104,13 +104,14 @@ h3 {
   text-align: center;
   font-size: 48px;
   margin: 0;
-  padding-bottom: 110px;
+  padding: 70px 0;
 }
 
 .projects h2 {
   font-family: Poppins, sans-serif;
   color: black;
   font-size: 60px;
+  padding-top: 80px;
 }
 
 .projects-p {
@@ -143,9 +144,51 @@ h3 {
   margin: 0 auto;
 }
 
+.container-contact {
+  max-width: 100%;
+  background: var(--secondary-color);
+  padding: 350px 0;
+}
+
+.contact {
+  text-align: center;
+  font-size: 40px;
+}
+
+.contact-email {
+  font-size: 20px;
+}
+
+.contact-email a {
+  color: var(--third-color);
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+
+.contact-email a:hover {
+  text-decoration: underline;
+}
+
+.contact-links {
+  margin: 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-links a {
+  color: white;
+  font-size: 25px;
+  margin: 0 30px;
+  transition: all 150ms ease-in-out;
+}
+
+.contact-links a:hover {
+  color: rgba(255, 255, 255, 0.7);
+}
+
 @media (max-width: 1900px) {
   .container-projects {
-    padding: 20px;
+    padding:0 12px;
   }
 
   .projects {
@@ -154,7 +197,7 @@ h3 {
 
   .title-projects {
     font-size: 36px;
-    padding-bottom: 50px;
+    padding: 40px 0;
   }
 
   .projects h2 {
@@ -186,7 +229,7 @@ h3 {
   .projects h2 {
     padding-top: 20px;
   }
-  
+
   .projects img {
     max-width: 60%;
   }
@@ -196,6 +239,10 @@ h3 {
   .nav-home {
     font-size: 18px;
   }
+  
+   nav li {
+     padding: 0;
+   }
 
   nav a {
     font-size: 12px;
@@ -237,6 +284,26 @@ h3 {
     padding: 15px 10px;
     display: block;
     margin: 0 auto;
+  }
+
+  .container-contact {
+    padding: 250px 0;
+  }
+
+  .contact {
+    font-size: 25px;
+  }
+
+  .contact-email {
+    font-size: 14px;
+  }
+
+  .contact-links {
+    margin: 20px 0;
+  }
+
+  .contact-links a {
+    font-size: 18px;
   }
 }
 
