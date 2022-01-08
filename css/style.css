@@ -2,7 +2,7 @@
   --primary-font-family: "Nunito", sans-serif;
   --primary-bg-color: linear-gradient(
     150deg,
-    rgb(0, 0, 0) 30%,
+    rgb(0, 0, 0) 15%,
     rgb(102, 46, 237) 100%
   );
   --primary-color: #423b67;
@@ -63,7 +63,7 @@ h3 {
 }
 
 .hero {
-  padding: 240px 0;
+  padding: 240px 0 180px;
 }
 
 .hero a {
@@ -85,6 +85,49 @@ h3 {
   display: block;
   box-shadow: var(--border);
   float: right;
+}
+
+.about {
+  margin-bottom: 150px;
+}
+
+.about h2 {
+  text-align: center;
+  margin: 100px 0;
+  padding: 0;
+}
+
+.about p {
+  font-size: 25px;
+  text-align: center;
+  margin: 0;
+}
+
+.about ul {
+  padding: 0;
+  margin: 100px 0; 
+}
+
+.about-skills {
+  background-color: rgb(102, 46, 237, 0.5);
+  color: rgba(255, 255, 255);
+  list-style: none;
+  text-align: center;
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.about-icons {
+  color: rgba(255, 255, 255);
+  font-size: 50px;
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.skills-paragraph {
+  color: white;
+  font-size: 20px;
+  padding-top: 30px;
 }
 
 .container-projects {
@@ -245,7 +288,7 @@ h3 {
    }
 
   nav a {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   h2 {
