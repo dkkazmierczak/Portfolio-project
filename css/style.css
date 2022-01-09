@@ -37,11 +37,11 @@ nav a {
   color: var(--primary-color) !important;
   font-size: 18px;
   font-weight: 700;
+  transition: all 150ms ease-in-out !important;
 }
 
 nav a:hover {
   color: var(--third-color) !important;
-  transition: all 150ms ease-in-out !important;
 }
 
 h2 {
@@ -63,7 +63,7 @@ h3 {
 }
 
 .hero {
-  padding: 240px 0 180px;
+  padding-top: 240px;
 }
 
 .hero a {
@@ -88,7 +88,8 @@ h3 {
 }
 
 .about {
-  margin-bottom: 150px;
+  margin: 120px 0 150px;
+  padding: 130px 0 100px;
 }
 
 .about p {
@@ -103,12 +104,19 @@ h3 {
 }
 
 .about-skills {
-  background-color: rgb(102, 46, 237, 0.5);
-  color: rgba(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  -webkit-backdrop-filter: blur(8px) !important;
+  backdrop-filter: blur(8px) !important;
   list-style: none;
   text-align: center;
   padding: 40px;
-  border-radius: 20px;
+  border-radius: var(--border-radius);
+  transition: all 150ms ease-in-out;
+  box-shadow: 0 5px 30px rgba(102, 46, 237, 0.7);
+}
+
+.about-skills:hover {
+  box-shadow: 0 5px 30px rgba(102, 46, 237, 0.7);
 }
 
 .about-icons {
@@ -118,10 +126,24 @@ h3 {
   justify-content:space-evenly;
 }
 
+.icon-bootstrap {
+  color: #6e509c;
+}
+
 .skills-paragraph {
   color: white;
   font-size: 20px;
   padding-top: 30px;
+}
+
+.skills-link {
+  color: white;
+  text-decoration: none;
+  transition: all 150ms ease-in-out;
+}
+
+.skills-link:hover {
+  color: var(--third-color) !important;
 }
 
 .container-projects {
@@ -141,7 +163,7 @@ h3 {
   text-align: center;
   font-size: 48px;
   margin: 0;
-  padding: 70px 0;
+  padding: 100px 0;
 }
 
 .projects h2 {
@@ -318,7 +340,7 @@ h3 {
   .hero .small {
     font-size: 12px;
     transition: all 200ms ease-in-out;
-    padding: 15px 10px;
+    padding: 30px 10px;
     display: block;
     margin: 0 auto;
   }
