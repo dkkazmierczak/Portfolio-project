@@ -133,13 +133,13 @@ h3 {
 }
 
 .skills-link {
-  color: white;
+  color: var(--third-color);
   text-decoration: none;
   transition: all 150ms ease-in-out;
 }
 
 .skills-link:hover {
-  color: var(--third-color) !important;
+  color: rgb(125, 70, 255) !important;
 }
 
 .container-projects {
